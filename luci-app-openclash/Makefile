@@ -25,6 +25,10 @@ endef
 define Package/$(PKG_NAME)/postinst
 endef
 
+define Package/luci-app-openclash/conffiles
+/etc/config/openclash
+endef
+
 define Build/Prepare
 	$(CP) $(CURDIR)/files $(PKG_BUILD_DIR)
 	$(foreach po,$(wildcard ${CURDIR}/i18n/zh-cn/*.po), \
