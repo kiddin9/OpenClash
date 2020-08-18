@@ -22,6 +22,10 @@ define Package/$(PKG_NAME)/description
     A LuCI support for clash
 endef
 
+define Package/luci-app-openclash/conffiles
+/etc/config/openclash
+endef
+
 define Package/$(PKG_NAME)/postinst
 endef
 
